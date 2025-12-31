@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">FreshBites</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food, Delivered To You</h1>
+            <p>Experience the best flavors in town with fresh ingredients.</p>
+            <button onclick="scrollToMenu()">Order Now</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="food-card">
+                <div class="image-placeholder" style="background-color: #ff9f43;">🍔</div>
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with fresh lettuce and cheese.</p>
+                <span class="price">$8.99</span>
+                <button class="order-btn" onclick="orderItem('Classic Burger')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <div class="image-placeholder" style="background-color: #ff6b6b;">🍕</div>
+                <h3>Pepperoni Pizza</h3>
+                <p>Crispy crust topped with mozzarella and pepperoni.</p>
+                <span class="price">$12.50</span>
+                <button class="order-btn" onclick="orderItem('Pepperoni Pizza')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <div class="image-placeholder" style="background-color: #54a0ff;">🍝</div>
+                <h3>Creamy Pasta</h3>
+                <p>Penne pasta tossed in a rich alfredo sauce.</p>
+                <span class="price">$10.00</span>
+                <button class="order-btn" onclick="orderItem('Creamy Pasta')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At FreshBites, we believe in quality. Our chefs use only the freshest local ingredients to craft meals that warm your heart and fill your stomach.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us: (555) 123-4567 | info@freshbites.com</p>
+        <p>&copy; 2025 FreshBites Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
